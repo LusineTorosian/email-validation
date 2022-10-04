@@ -10,7 +10,7 @@ function App() {
     const regEx = /[a-zA-Z0-9._%+-] + @[a-z0-9-]+\.[a-z]{2,8}|(.[a-z{}])?/g
     if(regEx.test(email)) {
       setMessage("Email is vaild")
-    } else if (!regEx.test(email) && email != 0) {
+    } else if (!regEx.test(email) && email !== 0) {
       setMessage("Email is not valid");
     } else {
       setMessage("");
